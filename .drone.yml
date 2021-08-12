@@ -20,7 +20,7 @@ steps:
       - success
       - failure
    settings: 
-      message: finisheD + {{.status}}
+      message: finisheD + {{build.status}}
       token: 
         from_secret: TELEGRAM_TOKEN
       to: 302394045
