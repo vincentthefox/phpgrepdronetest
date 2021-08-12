@@ -14,6 +14,12 @@ steps:
    commands:
     - go test -v -race ./...
  - name: telegram
-   image: golang:1.13.1
-   commands:
-    - go get -u -v github.com/appleboy/drone-telegram
+   image: appleboy/drone-telegram
+   when:
+    status:
+      - success
+      - failure
+   settings: 
+      token: 
+        from_secret: TELEGRAM_TOKEN
+      to: 302394045
