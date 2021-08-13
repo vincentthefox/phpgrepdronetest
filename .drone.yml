@@ -20,7 +20,9 @@ steps:
       - success
       - failure
    settings: 
-      message: FFfinisheD + {{build.status}}
       token: 
         from_secret: TELEGRAM_TOKEN
       to: 302394045
+trigger:
+  branch: 
+   - main
