@@ -1,5 +1,5 @@
 kind: pipeline
-name: go_test
+name: gotest
 steps:
  - name: first_step
    image: golang:1.13.1
