@@ -5,14 +5,14 @@ steps:
    image: golang:1.13.1
    commands:
     - go get -v -t ./...
-# - name: second_step
-#   image: golang:1.13.1
-#   commands:
-#    - go vet ./...
-# - name: third_step
-#   image: golang:1.13.1
-#   commands:
-#    - go test -v -race ./...
+ - name: second_step
+   image: golang:1.13.1
+   commands:
+    - go vet ./...
+ - name: third_step
+   image: golang:1.13.1
+   commands:
+    - go test -v -race ./...
  - name: telegram
    image: appleboy/drone-telegram
    when:
