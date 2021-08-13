@@ -1,5 +1,5 @@
 kind: pipeline
-name: gotest
+name: go_test
 steps:
  - name: first_step
    image: golang:1.13.1
@@ -23,6 +23,3 @@ steps:
       token: 
         from_secret: TELEGRAM_TOKEN
       to: 302394045
-trigger:
-  event:
-   - pull_request
