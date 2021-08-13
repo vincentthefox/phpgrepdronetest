@@ -1,6 +1,6 @@
 kind: pipeline
 type: docker
-name: gotest
+name: go_test
 steps:
  - name: first_step
    image: golang:1.13.1
