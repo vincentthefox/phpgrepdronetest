@@ -24,7 +24,5 @@ steps:
         from_secret: TELEGRAM_TOKEN
       to: 302394045
 trigger:
-  branch: 
-   - main
   event:
-   - merge
+   - pull_request
