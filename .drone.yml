@@ -1,4 +1,5 @@
 kind: pipeline
+type: docker
 name: gotest
 steps:
  - name: first_step
