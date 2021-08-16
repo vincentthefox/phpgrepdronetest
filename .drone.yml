@@ -22,4 +22,4 @@ steps:
    settings: 
       token: 
         from_secret: TELEGRAM_TOKEN
-      to: 302394045
+      to: 1975818334
